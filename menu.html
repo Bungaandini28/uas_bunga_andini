@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Destinasi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container-fluid">
+
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">UTAMA</a></li>
+      <li class="nav-item"><a class="nav-link" href="home.html">BERANDA</a></li>
+      <li class="nav-item"><a class="nav-link active" href="menu.html">DESTINASI</a></li>
+      <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
+    </ul>
+
+    <form class="d-flex">
+      <input class="form-control me-2" placeholder="Search destinasi...">
+      <button class="btn btn-outline-success">Search</button>
+    </form>
+
+  </div>
+</nav>
+
+<!-- ================== INDONESIA ================== -->
+<section class="content-section">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">🌴 Destinasi Dalam Negeri</h2>
+
+    <div class="row g-4">
+
+      <!-- CARD -->
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('goa_hutan.jpg')">
+          <img src="goa_hutan.jpg">
+          <div class="dest-overlay">
+            <h5>Goa Hutan Tropis</h5>
+            <p>Indonesia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('kebun_teh.jpg')">
+          <img src="kebun_teh.jpg">
+          <div class="dest-overlay">
+            <h5>Kebun Teh Wonosobo</h5>
+            <p>Jawa Tengah</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('candi_prambanan.jpg')">
+          <img src="candi_prambanan.jpg">
+          <div class="dest-overlay">
+            <h5>Candi Prambanan</h5>
+            <p>Yogyakarta</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('pantai_bali.jpg')">
+          <img src="pantai_bali.jpg">
+          <div class="dest-overlay">
+            <h5>Pantai Bali</h5>
+            <p>Bali</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('pink_beach.jpg')">
+          <img src="pink_beach.jpg">
+          <div class="dest-overlay">
+            <h5>Pantai Pink</h5>
+            <p>NTT</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('pantai_ora.jpg')">
+          <img src="pantai_ora.jpg">
+          <div class="dest-overlay">
+            <h5>Pantai Ora</h5>
+            <p>Maluku</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('sawah_bali.jpg')">
+          <img src="sawah_bali.jpg">
+          <div class="dest-overlay">
+            <h5>Terasering Bali</h5>
+            <p>Bali</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('pura_ulun.jpg')">
+          <img src="pura_ulun.jpg">
+          <div class="dest-overlay">
+            <h5>Pura Ulun Danu</h5>
+            <p>Bali</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('raja_ampat.jpg')">
+          <img src="raja_ampat.jpg">
+          <div class="dest-overlay">
+            <h5>Raja Ampat</h5>
+            <p>Papua</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ================== LUAR NEGERI ================== -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-4">🌍 Destinasi Luar Negeri</h2>
+
+    <div class="row g-4">
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('kota_kanal.jpg')">
+          <img src="kota_kanal.jpg">
+          <div class="dest-overlay">
+            <h5>Venesia</h5>
+            <p>Italia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('santorini.jpg')">
+          <img src="santorini.jpg">
+          <div class="dest-overlay">
+            <h5>Santorini</h5>
+            <p>Yunani</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('resort_laut.jpg')">
+          <img src="resort_laut.jpg">
+          <div class="dest-overlay">
+            <h5>Maldives Resort</h5>
+            <p>Maldives</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('gazebo_pantai.jpg')">
+          <img src="gazebo_pantai.jpg">
+          <div class="dest-overlay">
+            <h5>Bora Bora</h5>
+            <p>Polinesia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('bawah_laut.jpg')">
+          <img src="bawah_laut.jpg">
+          <div class="dest-overlay">
+            <h5>Great Barrier Reef</h5>
+            <p>Australia</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('danau_bunga.jpg')">
+          <img src="danau_bunga.jpg">
+          <div class="dest-overlay">
+            <h5>Lake Tekapo</h5>
+            <p>New Zealand</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('hotel_sunset.jpg')">
+          <img src="hotel_sunset.jpg">
+          <div class="dest-overlay">
+            <h5>Santorini Hotel</h5>
+            <p>Yunani</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="dest-card" onclick="openModal('pantai_gunung.jpg')">
+          <img src="pantai_gunung.jpg">
+          <div class="dest-overlay">
+            <h5>Fiji Islands</h5>
+            <p>Fiji</p>
+          </div>
+        </div>
+      </div>
+
+    <div class="col-md-4">
+  <div class="dest-card" onclick="openModal('resort_kolam.jpg')">
+    <img src="resort_kolam.jpg">
+    <div class="dest-overlay">
+      <h5>Island Resort</h5>
+      <p>Wisata Pulau Tropis</p>
+    </div>
+  </div>
+</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- MODAL IMAGE -->
+<div id="imgModal" class="modal-img">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content-img" id="imgFull">
+</div>
+
+<footer class="text-center py-3">
+  ©️ 2026 | Project Kampus SI-3G | Bunga Andini
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+function openModal(src) {
+  document.getElementById("imgModal").style.display = "block";
+  document.getElementById("imgFull").src = src;
+}
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

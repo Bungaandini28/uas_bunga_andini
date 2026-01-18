@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Santorini</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container-fluid">
+
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">UTAMA</a></li>
+      <li class="nav-item"><a class="nav-link" href="home.html">BERANDA</a></li>
+      <li class="nav-item"><a class="nav-link" href="menu.html">MENU</a></li>
+      <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
+    </ul>
+
+    <form class="d-flex">
+      <input class="form-control me-2" placeholder="Search destinasi...">
+      <button class="btn btn-outline-success">Search</button>
+    </form>
+
+  </div>
+</nav>
+
+<!-- HERO IMAGE -->
+<section class="hero-detail" style="background-image: url('santorini.jpg');">
+  <div class="hero-detail-overlay">
+    <h1>Santorini</h1>
+    <p>Yunani</p>
+  </div>
+</section>
+
+<!-- DESKRIPSI -->
+<section class="content-section">
+  <div class="container">
+    <h3 class="fw-bold mb-3">Tentang Santorini</h3>
+    <p>
+      Santorini adalah pulau paling ikonik di Yunani yang terkenal dengan bangunan 
+      putih beratap biru yang berdiri di tebing menghadap Laut Aegea. 
+      Keindahan arsitektur khas, laut biru jernih, serta pemandangan sunset 
+      yang romantis menjadikan Santorini salah satu destinasi wisata terbaik di dunia.
+    </p>
+
+    <p>
+      Selain panorama alamnya, Santorini juga menawarkan budaya khas Yunani, 
+      kuliner laut segar, serta suasana kota kecil yang tenang dan eksotis.
+    </p>
+
+    <a href="home.html" class="btn btn-main mt-3">Kembali ke Beranda</a>
+  </div>
+</section>
+
+<!-- GALERI FOTO -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h4 class="text-center fw-bold mb-4">Galeri Santorini</h4>
+
+    <div class="row g-3">
+
+      <div class="col-md-4">
+        <img src="santo1.jpg" class="img-fluid rounded shadow img-click" onclick="showModal(this.src)">
+      </div>
+
+      <div class="col-md-4">
+        <img src="santo2.jpg" class="img-fluid rounded shadow img-click" onclick="showModal(this.src)">
+      </div>
+
+      <div class="col-md-4">
+        <img src="santo3.jpg" class="img-fluid rounded shadow img-click" onclick="showModal(this.src)">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- MODAL FULL IMAGE -->
+<div id="imgModal" class="modal-img">
+  <span class="close-btn" onclick="closeModal()">&times;</span>
+  <img class="modal-content-img" id="imgModalContent">
+</div>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  ©️ 2026 | Project Kampus SI-3G | Bunga Andini
+</footer>
+
+<script>
+function showModal(src) {
+  document.getElementById("imgModal").style.display = "block";
+  document.getElementById("imgModalContent").src = src;
+}
+function closeModal() {
+  document.getElementById("imgModal").style.display = "none";
+}
+</script>
+
+</body>
+</html>

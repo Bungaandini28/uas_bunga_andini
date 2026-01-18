@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Explore Nusantara</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container-fluid">
+
+    <ul class="navbar-nav me-auto">
+      <li class="nav-item"><a class="nav-link active" href="index.html">UTAMA</a></li>
+      <li class="nav-item"><a class="nav-link" href="home.html">BERANDA</a></li>
+      <li class="nav-item"><a class="nav-link" href="menu.html">DESTINASI</a></li>
+      <li class="nav-item"><a class="nav-link" href="profil.html">PROFIL</a></li>
+    </ul>
+
+    <form class="d-flex">
+      <input class="form-control me-2" placeholder="Search destinasi...">
+      <button class="btn btn-outline-success">Search</button>
+    </form>
+
+  </div>
+</nav>
+
+<section class="hero-slider">
+
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- indikator bulat -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3"></button>
+    </div>
+
+    <!-- isi slide -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active">
+        <div class="hero-slide" style="background-image: url('santorini.jpg');">
+          <div class="hero-overlay-utama">
+            <div class="text-center text-white">
+              <h1>Explore Nusantara</h1>
+              <p>Jelajahi keindahan Indonesia & Dunia</p>
+              <a href="menu.html" class="btn btn-main mt-3">Mulai Jelajah</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('raja_ampat.jpg');">
+          <div class="hero-overlay-utama">
+            <div class="text-center text-white">
+              <h1>Surga Bahari Indonesia</h1>
+              <p>Raja Ampat, Papua</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('pink_beach.jpg');">
+          <div class="hero-overlay-utama">
+            <div class="text-center text-white">
+              <h1>Pantai Pink Komodo</h1>
+              <p>Keindahan langka dunia</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <div class="hero-slide" style="background-image: url('kebun_teh.jpg');">
+          <div class="hero-overlay-utama">
+            <div class="text-center text-white">
+              <h1>Wisata Alam Hijau</h1>
+              <p>Kebun Teh Wonosobo</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- tombol kiri kanan -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+<!-- MENU CEPAT -->
+<section class="content-section">
+  <div class="container text-center">
+    <h3 class="fw-bold mb-4">Menu Utama</h3>
+
+    <a href="home.html" class="btn btn-main m-2">Beranda</a>
+    <a href="menu.html" class="btn btn-main m-2">Destinasi</a>
+    <a href="profil.html" class="btn btn-main m-2">Profil</a>
+  </div>
+</section>
+
+<!-- HIGHLIGHT KATEGORI -->
+<section class="content-section bg-light">
+  <div class="container">
+    <h3 class="text-center fw-bold mb-4">Kategori Wisata</h3>
+
+    <div class="row g-4 text-center">
+
+      <div class="col-md-4">
+        <div class="card category-card">
+          <img src="raja_ampat.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Wisata Bahari</h5>
+            <p>Pantai, laut, dan bawah laut terindah.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card category-card">
+          <img src="kebun_teh.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Wisata Alam</h5>
+            <p>Gunung, danau, dan hutan hijau.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card category-card">
+          <img src="b.jpg" class="card-img-top">
+          <div class="card-body">
+            <h5>Wisata Kota</h5>
+            <p>Kota ikonik dunia penuh budaya.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- VIDEO DESTINASI -->
+<section class="video-destinasi">
+
+  <div class="video-box">
+    <video autoplay muted loop playsinline>
+      <source src="raja.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay">
+      <h2>Raja Ampat</h2>
+      <p>Surga laut tercantik di Indonesia</p>
+    </div>
+  </div>
+
+  <div class="video-box">
+    <video autoplay muted loop playsinline>
+      <source src="pink_beach.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay">
+      <h2>Pantai Pink</h2>
+      <p>Pantai eksotis berpasir merah muda</p>
+    </div>
+  </div>
+
+  <div class="video-box">
+    <video autoplay muted loop playsinline>
+      <source src="santorini.mp4" type="video/mp4">
+    </video>
+    <div class="video-overlay">
+      <h2>Santorini</h2>
+      <p>Ikon romantis Yunani</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="text-center py-3">
+  ©️ 2026 | Project Kampus SI-3G | Bunga Andini
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

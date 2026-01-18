@@ -1,0 +1,436 @@
+body {
+  padding-top: 70px;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+}
+
+/* Background lembut */
+.bg-pattern {
+  background-color: #e8f6ff;
+  padding: 60px 0;
+}
+
+/* Box menu utama */
+.menu-box {
+  background: white;
+  width: 70%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 15px;
+}
+
+.menu-box h2 {
+  color: #0077b6;
+  font-weight: bold;
+}
+
+/* Tombol */
+.btn-main {
+  background-color: #00b4d8;
+  color: white;
+  margin: 5px;
+  border-radius: 8px;
+}
+
+.btn-main:hover {
+  background-color: #0077b6;
+  color: white;
+}
+
+/* Section */
+.content-section {
+  padding: 60px 0;
+}
+
+/* Gambar grid konsisten */
+.content-section img {
+  height: 220px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: white;
+  font-size: 14px;
+}
+/* Efek klik gambar */
+.img-click {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.img-click:hover {
+  transform: scale(1.03);
+}
+
+/* Modal full image */
+.modal-img {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 80px;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.8);
+}
+
+.modal-content-img {
+  display: block;
+  margin: auto;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px; right: 35px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
+.close-btn:hover {
+  color: #bbb;
+}
+.slider-img {
+  height: 700px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.carousel-caption {
+  background: rgba(0,0,0,0.4);
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+/* CARD DESTINASI BERANDA */
+.destination-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.destination-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.destination-card:hover {
+  transform: translateY(-5px);
+}
+/* HERO DETAIL PAGE */
+.hero-detail {
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+  position: relative;
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.hero-detail-overlay {
+  background: rgba(0,0,0,0.55);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 15px;
+}
+
+.hero-detail-overlay h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+/* CARD PROFIL */
+.profile-card {
+  background: white;
+  max-width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.profile-img {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #00b4d8;
+}
+/* HERO UTAMA */
+.hero-utama {
+  background: url("kota_kanal.jpg") center/cover no-repeat;
+  height: 380px;
+  margin-top: 70px;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  position: relative;
+}
+
+.hero-overlay-utama {
+  background: rgba(0,0,0,0.6);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+
+.hero-utama h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* CARD KATEGORI */
+.category-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.category-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+}
+/* HERO SLIDER */
+.hero-slider {
+  margin-top: 70px;
+}
+
+.hero-slider {
+  margin-top: 70px;
+}
+
+.hero-slide {
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.hero-overlay-utama {
+  background: rgba(0,0,0,0.55);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+}
+/* SECTION VIDEO DESTINASI */
+.video-destinasi {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+  gap: 20px;
+  padding: 40px;
+  background: #f5fbff;
+}
+
+.video-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  height: 220px;
+}
+
+.video-box video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.video-overlay h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.video-overlay p {
+  font-size: 14px;
+}
+
+/* Section kategori */
+.content-section {
+  background: linear-gradient(120deg, #ffffff, #e3f2fd);
+  padding: 60px 20px;
+}
+
+/* Section video destinasi */
+.video-section {
+  background: linear-gradient(120deg, #e1f5fe, #fce4ec);
+  padding: 70px 20px;
+  border-radius: 20px;
+  margin: 30px 15px;
+}
+.video-section {
+  background-image: 
+    radial-gradient(circle at top left, rgba(255,255,255,0.4) 1px, transparent 1px),
+    radial-gradient(circle at bottom right, rgba(255,255,255,0.4) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+/* ==== CARD DESTINASI ==== */
+.dest-card {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  height: 230px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.dest-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dest-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 15px;
+  color: white;
+}
+
+.dest-overlay h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+.dest-overlay p {
+  margin: 0;
+  font-size: 13px;
+}
+
+.dest-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(0,0,0,0.12);
+}
+
+/* ==== BACKGROUND SECTION ==== */
+.content-section {
+  background: linear-gradient(120deg, #ffffff, #e3f2fd);
+  padding: 60px 20px;
+}
+
+.content-section.bg-light {
+  background: linear-gradient(120deg, #fce4ec, #e1f5fe);
+}
+body {
+  padding-top: 70px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* HERO */
+.hero-section {
+  background: url("pantai.mp4") center/cover no-repeat;
+  height: 380px;
+  margin-top: 70px;
+  border-radius: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  overflow: hidden;
+}
+
+.hero-overlay {
+  background: linear-gradient(135deg, rgba(0,180,216,0.6), rgba(0,0,0,0.6));
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-text h1 {
+  font-size: 45px;
+  font-weight: bold;
+}
+
+/* BUTTON */
+.btn-main {
+  background: #00b4d8;
+  color: white;
+  border-radius: 8px;
+}
+
+.btn-main:hover {
+  background: #0077b6;
+  color: white;
+}
+
+/* CONTENT */
+.content-section {
+  padding: 60px 20px;
+}
+
+/* STAT */
+.stat-section {
+  background: linear-gradient(120deg,#e1f5fe,#fce4ec);
+  padding: 50px 20px;
+}
+
+.stat-box {
+  font-weight: bold;
+  font-size: 28px;
+  color: #0077b6;
+}
+
+.stat-label {
+  font-size: 14px;
+}
+
+/* DEST CARD */
+.destination-card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  transition: 0.3s;
+}
+
+.destination-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,180,216,0.4);
+}
+
+.destination-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+/* QUOTE */
+.quote-section {
+  background: #00b4d8;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  font-style: italic;
+}
