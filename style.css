@@ -42,6 +42,7 @@ body {
   padding: 60px 0;
 }
 
+/* Gambar grid konsisten */
 .content-section img {
   height: 220px;
   width: 100%;
@@ -452,26 +453,29 @@ body {
   margin-right: auto !important;
 }
 
-
 .hero-utama h1,
 .hero-text h1,
 .hero-detail-overlay h1 {
   font-size: 32px !important;
 }
 
-{
+
+.profile-card {
   max-width: 420px !important;
 }
 
-{
+
+.profile-img {
   width: 160px !important;
   height: 160px !important;
 }
 
-{
+
+.slider-img {
   height: 300px !important;
 }
 
-{
+
+body {
   overflow-x: hidden;
 }
